@@ -36,7 +36,7 @@ app.use('/img',express.static(path.resolve(__dirname,'assets/img')))
 app.use(route)
 
 
-console.log(process.env.MONGO_URI)
+// console.log(process.env.MONGO_URI)
 app.listen(PORT,()=>{
     console.log('running server')
 })
