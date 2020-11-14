@@ -6,7 +6,7 @@ const path=require('path')
 const app=express()
 const route=require('./server/route/router')
 const ConnectDb=require('./server/db/conn')
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 dotenv.config({path:'congif.env'})
 
 // console.log request
