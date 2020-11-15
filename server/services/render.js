@@ -1,5 +1,6 @@
 const axios=require('axios')
 
+// console.log(process.env)
 exports.homeRoute=(req,res)=>{
     // get request to api/users
     axios.get(`http://localhost:${process.env.PORT}/api/users`)
