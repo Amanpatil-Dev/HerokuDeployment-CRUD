@@ -19,7 +19,7 @@ $('#update_user').submit(function(Event){
     // console.log(data.id)
 
     const request={
-        'url':'http://localhost:$'+ process.env.PORT +'/api/users/' + data.id,
+        'url':`http://localhost:${process.env.PORT}/api/users/${data.id}`,
         'method':'PUT',
         'data':data
         
@@ -36,7 +36,7 @@ if(window.location.pathname=='/'){
         const id=$(this).attr("data-id")
 
         const request={
-            'url':'http://localhost:'+ process.env.PORT +'/api/users/' + id,
+            'url':`http://localhost:${process.env.PORT}/api/users/${id}`,
             'method':'DELETE'
         }
         if(confirm('Do You Really Want to delete The data')){
