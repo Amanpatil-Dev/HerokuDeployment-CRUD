@@ -1,10 +1,5 @@
 console.log('custom working')
-const dotenv = require('dotenv');
-const path=require('path')
-// console.log('connected')
-const envVar_Path=path.join (__dirname,'../../congif.env')
-dotenv.config( { path : envVar_Path} )
-// console.log(process.env.PORT)
+
 
 
 $("#add_user").submit(function(Event){
